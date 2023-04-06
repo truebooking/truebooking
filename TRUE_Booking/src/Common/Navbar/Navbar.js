@@ -75,7 +75,7 @@ const Navbar = () => {
       <header>
         <div className='container flex_space'>
           <div className='logo'>
-            <img src='images/logo.png' alt='' />
+          <Link to= '/'><img src='images/logo.png' alt='' /></Link>
           </div>
           
           <div className='contact flex_space '>
