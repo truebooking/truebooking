@@ -1,0 +1,18 @@
+.fitscreen-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .fitscreen-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  

@@ -1,7 +1,17 @@
-.error {
-  height: 50vh;
+.fullscreen-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
 }
-.error h1 {
-  font-size: 50px;
-  color: crimson;
+
+.fullscreen-image {
+  max-height: 100%;
+  max-width: 100%;
 }
+

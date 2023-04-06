@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
-
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false)
   return (
@@ -78,15 +77,25 @@ const Navbar = () => {
           <div className='logo'>
             <img src='images/logo.png' alt='' />
           </div>
-
+          
           <div className='contact flex_space '>
+          <div className='book cab'>
             <div className='box flex_space'>
               <div className='icons'>
-                <i class='fal fa-clock'></i>
+                <i class='fal fa-car'></i>
+              </div>
+            <div className='text'>
+                <h4>Book a Cab!</h4>
+                <Link to='/Comingsoon'>Available 24 hours</Link>
+              </div></div>
+          </div>
+            <div className='box flex_space'>
+              <div className='icons'>
+                <i class='fal fa-plane'></i>
               </div>
               <div className='text'>
-                <h4>Working Hours</h4>
-                <Link to='/contact'>Monday - Sunday : 24 hours</Link>
+                <h4>Travel on Air!</h4>
+                <Link to='/Comingsoon'>Get your journey faster</Link>
               </div>
             </div>
             <div className='box flex_space'>
@@ -95,7 +104,7 @@ const Navbar = () => {
               </div>
               <div className='text'>
                 <h4>Call Us</h4>
-                <Link to='/contact'>+91 9574812478</Link>
+                <Link to='/contact'>+91 957812478</Link>
               </div>
             </div>
             <div className='box flex_space'>
@@ -104,7 +113,7 @@ const Navbar = () => {
               </div>
               <div className='text'>
                 <h4>Mail Us</h4>
-                <Link to='/contact'>truebooking@gmail.com</Link>
+                <Link to='/contact'>truebooking83@gmail.com</Link>
               </div>
             </div>
           </div>
