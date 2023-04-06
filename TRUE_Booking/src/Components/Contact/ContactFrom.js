@@ -84,7 +84,7 @@ const ContactFrom = () => {
             <br />
 
             <h3>Message us</h3>
-            <span>truebooking@gmail.com</span>
+            <span>truebooking83@gmail.com</span>
             <br />
             <span>+91 9574812478</span>
             <br />
