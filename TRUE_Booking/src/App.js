@@ -7,9 +7,12 @@ import Empty from "./Common/Empty/EmptyFile"
 //import Destinations from "./Components/Destinations/Destinations"
 //import DHome from "./Components/Destinations/Home"
 import Destinations from "./Components/Destinations/Home"
-
+import CabBooking from "./Components/cab-booking/Car"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import SinglePage from "./SinglePage/SinglePage"
+import CarSingle from "./Components/cab-booking/car-single-page/CarSingle"
+
+
 
 /*-------------blog------------ */
 import ComingSoonPage from "./Components/Coming/comingsoon"
@@ -36,12 +39,16 @@ function App() {
           <Route path='/singlepage/:id' component={SinglePage} />
           <Route path='/blog' exact component={Blog} />
           <Route path='/blogsingle/:id' component={BlogSingle} />
+          <Route path='/carsingle/: ' component={CarSingle} />
           <Route path='/testimonial' component={Testimonial} />
           <Route path='/contact' component={Contact} />
           <Route path='/sign-in' component={Login} />
           <Route path='/Register' component={Register} />
           <Route path='/Empty' common={EmptyFile}/>
+        
           <Route path='/Comingsoon' component={ComingSoonPage}/>
+          <Route path='/CabBooking' component={CabBooking}/>
+          
         </Switch>
         <Footer />
       </Router>
